@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="Kcg-W4-Wz6">
+            <objects>
+                <viewController storyboardIdentifier="Login" title="Login" id="US3-cE-szV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZc-H0-yx9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-MH-mXi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-dx-uAs">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biB-5B-ine">
+                                        <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-XM-elD">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYo-TE-qOG">
+                                                        <rect key="frame" x="152" y="0.0" width="110" height="47.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-AR-Emx">
+                                                        <rect key="frame" x="57" y="47.5" width="300" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="300" id="4fM-4p-znF"/>
+                                                            <constraint firstAttribute="height" constant="150" id="t80-y0-ipy"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Get Feedback by sharing your game project or updates to people">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIJ-ll-AUT">
+                                                        <rect key="frame" x="42" y="197.5" width="330" height="185.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="330" id="bty-CN-Nfk"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Black Copy"/>
+                                                        <connections>
+                                                            <segue destination="j0N-ls-SuK" kind="show" id="DYC-PO-Szf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebc-7j-z74">
+                                                        <rect key="frame" x="42" y="383" width="330" height="65"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="330" id="ppL-0C-c8N"/>
+                                                            <constraint firstAttribute="height" constant="65" id="uS8-qg-a4d"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Sign in Now">
+                                                            <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="v63-tV-Blu" kind="show" id="O45-Pk-dqn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="lUB-XM-elD" secondAttribute="bottom" id="0iS-0R-Wzb"/>
+                                            <constraint firstAttribute="trailing" secondItem="lUB-XM-elD" secondAttribute="trailing" id="4I6-U3-dzt"/>
+                                            <constraint firstItem="lUB-XM-elD" firstAttribute="top" secondItem="biB-5B-ine" secondAttribute="top" id="HFw-6i-5NI"/>
+                                            <constraint firstItem="lUB-XM-elD" firstAttribute="leading" secondItem="biB-5B-ine" secondAttribute="leading" id="agx-5o-I4E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BaI-dx-uAs" firstAttribute="top" secondItem="c4P-MH-mXi" secondAttribute="top" id="4ST-os-exq"/>
+                                    <constraint firstAttribute="trailing" secondItem="BaI-dx-uAs" secondAttribute="trailing" id="77u-dr-c3Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="biB-5B-ine" secondAttribute="trailing" id="9aH-rl-34k"/>
+                                    <constraint firstItem="BaI-dx-uAs" firstAttribute="leading" secondItem="c4P-MH-mXi" secondAttribute="leading" id="DR9-Oe-1hB"/>
+                                    <constraint firstItem="biB-5B-ine" firstAttribute="top" secondItem="BaI-dx-uAs" secondAttribute="bottom" id="K3c-Ym-1Tc"/>
+                                    <constraint firstItem="biB-5B-ine" firstAttribute="top" secondItem="BaI-dx-uAs" secondAttribute="bottom" id="MSv-Ih-IFE"/>
+                                    <constraint firstAttribute="bottom" secondItem="biB-5B-ine" secondAttribute="bottom" id="itT-R1-oz9"/>
+                                    <constraint firstItem="biB-5B-ine" firstAttribute="leading" secondItem="c4P-MH-mXi" secondAttribute="leading" id="wbT-2d-Eoq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c4P-MH-mXi" firstAttribute="trailing" secondItem="lX6-je-SRv" secondAttribute="trailing" id="Amt-2Z-kh8"/>
+                            <constraint firstItem="c4P-MH-mXi" firstAttribute="top" secondItem="QZc-H0-yx9" secondAttribute="top" id="ZSU-HV-W1A"/>
+                            <constraint firstAttribute="bottom" secondItem="c4P-MH-mXi" secondAttribute="bottom" id="xNt-NQ-x6r"/>
+                            <constraint firstItem="c4P-MH-mXi" firstAttribute="leading" secondItem="QZc-H0-yx9" secondAttribute="leading" id="xYp-Fh-s7F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lX6-je-SRv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZ4-oY-mx9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-125" y="-274"/>
+        </scene>
+        <!--Comm-->
+        <scene sceneID="o77-xG-yeU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Comm" id="j0N-ls-SuK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ky3-Bv-e8E"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywb-B4-SO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="-275"/>
+        </scene>
+        <!--Expl-->
+        <scene sceneID="6Wg-ta-vUe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Expl" id="v63-tV-Blu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ebV-dy-X5L"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SmL-ZH-X8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-125" y="184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bitmap" width="523" height="689"/>
+        <image name="Black Copy" width="330" height="74"/>
+    </resources>
+</document>

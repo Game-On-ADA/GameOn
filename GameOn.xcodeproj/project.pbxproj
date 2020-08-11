@@ -17,6 +17,8 @@
 		41D360F124D0EED600CF09EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D360EF24D0EED600CF09EE /* LaunchScreen.storyboard */; };
 		41D360FC24D0EED600CF09EE /* GameOnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D360FB24D0EED600CF09EE /* GameOnTests.swift */; };
 		41D3610724D0EED600CF09EE /* GameOnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3610624D0EED600CF09EE /* GameOnUITests.swift */; };
+		DA50E85624E03B05008F2C20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA50E85524E03B05008F2C20 /* LoginViewController.swift */; };
+		DAFF793A24DD9195009F52BD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFF793924DD9195009F52BD /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		41D3610224D0EED600CF09EE /* GameOnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D3610624D0EED600CF09EE /* GameOnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOnUITests.swift; sourceTree = "<group>"; };
 		41D3610824D0EED600CF09EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA50E85524E03B05008F2C20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DAFF793924DD9195009F52BD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		41D360D324D0EED300CF09EE = {
 			isa = PBXGroup;
 			children = (
+				DAFF793B24DD91A8009F52BD /* Login */,
 				41D360DE24D0EED300CF09EE /* GameOn */,
 				41D360FA24D0EED600CF09EE /* GameOnTests */,
 				41D3610524D0EED600CF09EE /* GameOnUITests */,
@@ -132,6 +137,15 @@
 				41D3610824D0EED600CF09EE /* Info.plist */,
 			);
 			path = GameOnUITests;
+			sourceTree = "<group>";
+		};
+		DAFF793B24DD91A8009F52BD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF793924DD9195009F52BD /* Login.storyboard */,
+				DA50E85524E03B05008F2C20 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFF793A24DD9195009F52BD /* Login.storyboard in Resources */,
 				41D360F124D0EED600CF09EE /* LaunchScreen.storyboard in Resources */,
 				41D360EE24D0EED600CF09EE /* Assets.xcassets in Resources */,
 				41D360E924D0EED300CF09EE /* Main.storyboard in Resources */,
@@ -265,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA50E85624E03B05008F2C20 /* LoginViewController.swift in Sources */,
 				41D360EC24D0EED300CF09EE /* GameOn.xcdatamodeld in Sources */,
 				41D360E624D0EED300CF09EE /* SecondViewController.swift in Sources */,
 				41D360E424D0EED300CF09EE /* FirstViewController.swift in Sources */,
