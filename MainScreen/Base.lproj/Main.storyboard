@@ -10,7 +10,7 @@
         <!--Explore-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController storyboardIdentifier="Expl" title="Explore" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="9pv-A4-QxB" customClass="FirstViewController" customModule="GameOn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Expl" title="Explore" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="9pv-A4-QxB" customClass="ExploreViewController" customModule="GameOn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,9 @@
                                 <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="slider.horizontal.3" catalog="system"/>
                             </button>
+                            <connections>
+                                <action selector="filterPressed:" destination="9pv-A4-QxB" id="6i0-uh-N5N"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="tER-T1-9W5">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AXH-PP-KEv">
@@ -76,6 +79,9 @@
                                 <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="plus" catalog="system"/>
                             </button>
+                            <connections>
+                                <action selector="uploadPressed:" destination="9pv-A4-QxB" id="sku-KX-eSU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -83,16 +89,26 @@
             </objects>
             <point key="canvasLocation" x="-1788.4057971014495" y="819.64285714285711"/>
         </scene>
+        <!--Signin-->
+        <scene sceneID="661-du-YYO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Signin" id="fcO-IF-8W9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5fy-f8-Zsm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hem-sU-9zD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2646" y="-353"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="aE1-nU-mpe">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="dOV-Ph-DYe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signin" modalPresentationStyle="fullScreen" id="dOV-Ph-DYe" customClass="LoginViewController" customModule="GameOn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XV9-KJ-RCJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lMI-cI-o7m">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8O-9t-Xpn" userLabel="TopView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
@@ -131,7 +147,7 @@ and find your community</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SxX-Lt-zCb" userLabel="Bot Stack View">
-                                        <rect key="frame" x="0.0" y="590.5" width="414" height="112.5"/>
+                                        <rect key="frame" x="0.0" y="590.5" width="414" height="113"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjq-wf-b3b" userLabel="SigninWithEmailButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -141,20 +157,20 @@ and find your community</string>
                                                 <state key="normal" image="signinWEM"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJP-HL-ITW">
-                                                <rect key="frame" x="0.0" y="49" width="414" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="49" width="414" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="tKw-en-TdX"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8X-fF-nlM" userLabel="SigninWithAppleButton">
-                                                <rect key="frame" x="0.0" y="68.5" width="414" height="44"/>
+                                                <rect key="frame" x="0.0" y="69" width="414" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="onS-H5-sRM"/>
                                                 </constraints>
                                                 <state key="normal" image="signinWAP"/>
-                                                <connections>
-                                                    <segue destination="EWt-lG-Ftk" kind="show" id="1YU-Vi-6me"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -178,18 +194,18 @@ and find your community</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYy-WB-Zjq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100.00000000000001" y="810.9375"/>
+            <point key="canvasLocation" x="112" y="811"/>
         </scene>
         <!--Profile-->
         <scene sceneID="H9s-sj-Q6y">
             <objects>
-                <viewController storyboardIdentifier="Comm" title="Profile" modalPresentationStyle="fullScreen" id="EWt-lG-Ftk" customClass="SecondViewController" customModule="GameOn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Comm" title="Profile" modalPresentationStyle="fullScreen" id="EWt-lG-Ftk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EB6-bS-FIi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7XL-O8-CFe">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKi-cw-DD9">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -241,7 +257,7 @@ and find your community</string>
                                         <color key="selectedSegmentTintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </segmentedControl>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-E5-4vc">
-                                        <rect key="frame" x="0.0" y="185" width="414" height="518"/>
+                                        <rect key="frame" x="0.0" y="185" width="414" height="633"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="160" id="csa-Bl-rFo">
                                                 <rect key="frame" x="20" y="55.5" width="374" height="160"/>
@@ -290,7 +306,7 @@ and find your community</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDe-DY-VHQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="811"/>
+            <point key="canvasLocation" x="1575" y="811"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="9jZ-6A-nJB">
@@ -346,6 +362,9 @@ and find your community</string>
                                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="fcO-IF-8W9" kind="show" id="9ND-9e-Lg8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

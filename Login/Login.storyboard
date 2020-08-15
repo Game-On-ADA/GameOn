@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login-->
+        <!--View Controller-->
         <scene sceneID="Kcg-W4-Wz6">
             <objects>
-                <viewController storyboardIdentifier="Login" title="Login" id="US3-cE-szV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="US3-cE-szV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QZc-H0-yx9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywb-B4-SO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="678" y="-275"/>
+        </scene>
+        <!--New-->
+        <scene sceneID="cyf-3P-exE">
+            <objects>
+                <viewController storyboardIdentifier="New" title="New" id="Rnw-Kp-XZE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sb0-sp-YVo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rKx-3F-Wqk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Mt-xu-cRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="-247"/>
         </scene>
         <!--Expl-->
         <scene sceneID="6Wg-ta-vUe">

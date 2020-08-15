@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  GameOn
 //
 //  Created by Muhammat Rasid Ridho on 29/07/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
